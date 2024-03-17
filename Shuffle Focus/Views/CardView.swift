@@ -41,7 +41,7 @@ struct CardView: View {
         self.id = id
         
         
-        randomInt = Int.random(in: 0..<2)
+        randomInt = Int.random(in: 0..<4)
         
         switch type {
         case .timer:
@@ -50,17 +50,17 @@ struct CardView: View {
             
         case .shortPause:
             shuffleTimer = ShuffleTimer(_timerType: .shortPause)
-            header = "Short Pause"
+            header = "Break"
             
         case .longPause:
             shuffleTimer = ShuffleTimer(_timerType: .longPause)
-            header = "Long Pause"
+            header = "Long Break"
             
         case .absurdity:
-            header = "Absurdity"
+            header = ""
             
         case .blank:
-            header = "Blank"
+            header = ""
             
         }
     }
@@ -78,12 +78,10 @@ struct CardView: View {
             
             VStack {
                 HStack {
-                    if type != .blank {
-                        Text(header)
-                            .font(.largeTitle)
-                            .foregroundColor(.white)
-                            .multilineTextAlignment(.leading)
-                    }
+                    Text("")
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.leading)
 
                     Spacer()
                 }

@@ -89,17 +89,9 @@
 		3D6C774C2BA7795A00213737 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				3D6C77532BA78D1100213737 /* Images */,
 				3D6C774D2BA7813C00213737 /* Absurdities.json */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		3D6C77532BA78D1100213737 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Images;
 			sourceTree = "<group>";
 		};
 		3D8251FF2BA3B38E0045CD8D /* Logic */ = {

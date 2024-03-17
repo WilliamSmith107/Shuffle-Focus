@@ -59,6 +59,17 @@ struct SwipeView: View {
     var body: some View {
         VStack {
             Spacer()
+            
+            VStack {
+                Text("Today")
+                    .font(.headline)
+                    .foregroundColor(Color(UIColor.darkGray))
+                Text("\(eventManager.cycles)")
+                    .font(.title)
+                    .foregroundColor(Color(UIColor.darkGray))
+            }
+            
+            
             Spacer()
             ZStack {
                 ForEach(cardViews.indices.reversed(), id: \.self) { index in

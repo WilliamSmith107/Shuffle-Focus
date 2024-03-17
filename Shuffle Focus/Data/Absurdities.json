@@ -1,19 +1,29 @@
 {
     "results": [
       {
-        "name": "Ostrich",
-        "image": "Absurdity_Ostrich",
-        "detail": "Go and pet your ostrich."
+          "name": "Ostrich",
+          "image": "Absurdity_Ostrich",
+          "detail": "Go and pet your ostrich!"
       },
       {
-        "name": "Kangaroo",
-        "image": "Absurdity_Kangaroo",
-        "detail": "Fight that kangaroo!"
+          "name": "Kangaroo",
+          "image": "Absurdity_Kangaroo",
+          "detail": "Fight that kangaroo!"
       },
       {
-        "name": "Worm",
-        "image": "Absurdity_Worm",
-        "detail": "Make some worm soup..."
+          "name": "Worm",
+          "image": "Absurdity_Worms",
+          "detail": "Make some worm soup."
+      },
+      {
+          "name": "Cactus",
+          "image": "Absurdity_Cactus",
+          "detail": "Go and cuddle a cactus."
+      },
+      {
+          "name": "Onion",
+          "image": "Absurdity_Onion",
+          "detail": "Pickle an onion!"
       }
     ]
   }

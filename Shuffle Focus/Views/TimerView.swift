@@ -43,6 +43,7 @@ struct TimerView: View {
                                     print("Focus")
                                     if eventManager.timers < 3 {
                                         eventManager.timers += 1
+                                        eventManager.cycles += 1
                                     } else {
                                         eventManager.timers = 0
                                         eventManager.cycles += 1

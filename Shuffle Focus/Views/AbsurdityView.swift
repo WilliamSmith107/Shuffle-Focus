@@ -14,16 +14,16 @@ struct AbsurdityView: View {
     var detail: String
     
     var body: some View {
-        Text("\(image)")
-        Image(systemName: "moon.stars.fill")
+        Image(image)
             .resizable()
-            .frame(width: 100, height: 100)
+            .scaledToFit()
+            .frame(width: 200, height: 200)
             
         Spacer()
         
         Text("\(detail)")
             .multilineTextAlignment(.center)
-            .font(.system(size: 40))
+            .font(.system(size: 32))
             .foregroundStyle(.white)
             .fontWeight(.semibold)
     }
