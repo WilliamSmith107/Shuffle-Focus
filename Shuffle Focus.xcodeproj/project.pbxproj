@@ -15,6 +15,7 @@
 		3D95D5CC2BA683710075063E /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95D5CB2BA683710075063E /* TimerView.swift */; };
 		3D95D5CE2BA6837A0075063E /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95D5CD2BA6837A0075063E /* SwipeView.swift */; };
 		3D95D5D02BA6839E0075063E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95D5CF2BA6839E0075063E /* CardView.swift */; };
+		3D95D5D22BA746BA0075063E /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95D5D12BA746BA0075063E /* ProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		3D95D5CB2BA683710075063E /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		3D95D5CD2BA6837A0075063E /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 		3D95D5CF2BA6839E0075063E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3D95D5D12BA746BA0075063E /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				3D95D5CD2BA6837A0075063E /* SwipeView.swift */,
 				3D95D5CF2BA6839E0075063E /* CardView.swift */,
 				3D95D5CB2BA683710075063E /* TimerView.swift */,
+				3D95D5D12BA746BA0075063E /* ProgressView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				3D8252012BA3B39C0045CD8D /* ShuffleTimer.swift in Sources */,
 				3D95D5CC2BA683710075063E /* TimerView.swift in Sources */,
 				3D95D5CE2BA6837A0075063E /* SwipeView.swift in Sources */,
+				3D95D5D22BA746BA0075063E /* ProgressView.swift in Sources */,
 				3D95D5D02BA6839E0075063E /* CardView.swift in Sources */,
 				3D2CCAB32BA2247300DAFDB0 /* Shuffle_FocusApp.swift in Sources */,
 			);

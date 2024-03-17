@@ -47,6 +47,7 @@ struct TimerView: View {
                                         eventManager.timers = 0
                                         eventManager.cycles += 1
                                     }
+                                    eventManager.pauseFinished = false
                                 } else if type == .shortPause || type == .longPause {
                                     print("Break")
                                     if eventManager.pauses < 3 {
@@ -54,9 +55,12 @@ struct TimerView: View {
                                     } else {
                                         eventManager.pauses = 0
                                     }
+                                    eventManager.pauseFinished = true
                                 }
-                                
+                               
                                 eventManager.frontComplete = true
+                                eventManager.timerStarted = false
+                                
                             }
                         })
                 } else {
@@ -79,6 +83,11 @@ struct TimerView: View {
                 Button(action: {
                     withAnimation(.easeInOut) {
                         shuffleTimer.start()
+                        if type == .focus {
+                            eventManager.timerStarted = true
+                        } else {
+                            eventManager.pauseFinished = false
+                        }
                     }
                 }) {
                     Image(systemName: "play.circle.fill")

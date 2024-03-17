@@ -13,6 +13,9 @@ class EventManager: ObservableObject {
     @Published var cycles: Int = 0
     @Published var timers: Int = 0
     @Published var pauses: Int = 0
+    
+    @Published var timerStarted: Bool = false
+    @Published var pauseFinished: Bool = true
 }
 
 
@@ -49,6 +52,8 @@ struct SwipeView: View {
     
     var body: some View {
         VStack {
+            Spacer()
+            Spacer()
             ZStack {
                 ForEach(cardViews.indices.reversed(), id: \.self) { index in
                     
@@ -92,6 +97,12 @@ struct SwipeView: View {
                     }
                 }
             }
+            Spacer()
+            HStack {
+                ProgressView()
+                    .environmentObject(eventManager)
+            }
+            Spacer()
         }
     }
     
