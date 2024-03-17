@@ -7,6 +7,7 @@
 
 import Foundation
 import Observation
+import UserNotifications
 
 enum TimerState {
     case idle
@@ -57,11 +58,11 @@ class ShuffleTimer {
         
         switch timerType {
         case .focus:
-            _duration = 2
+            _duration = 1500
         case .shortPause:
-            _duration = 1
+            _duration = 300
         case .longPause:
-            _duration = 3
+            _duration = 1800
         }
     }
     
@@ -91,7 +92,8 @@ class ShuffleTimer {
     
     // MARK: Timer functions.
     private func createTimer() {
-        // Add notification logic.
+        
+        scheduleNotification(seconds: TimeInterval(secondsLeft), title: "Timer Done", body: "Your timer is complete.")
         
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
             self.timerUpdate()
@@ -99,16 +101,17 @@ class ShuffleTimer {
     }
     
     private func timerUpdate() {
-        if self.secondsLeft == 0 {
+        
+        if self.secondsLeft <= 0 {
             print("ShuffleTimer: Complete")
             _completed = true
             endTimer()
         }
         
-        
         let secondsSinceStartDate = Date.now.timeIntervalSince(self.dateStarted)
         
         self.timePassed = Int(secondsSinceStartDate) + self._secondsPassedBeforePause
+        
         
         
     }
@@ -139,5 +142,25 @@ class ShuffleTimer {
     
     func secondsToHoursMinutesSeconds(_ seconds: Int) -> (Int, Int) {
         return ((seconds % 3600) / 60, (seconds % 3600) % 60)
+    }
+    
+    
+    
+    func scheduleNotification(seconds: TimeInterval, title: String, body: String) {
+        let notificationCenter = UNUserNotificationCenter.current()
+        
+        notificationCenter.removeAllDeliveredNotifications()
+        notificationCenter.removeAllPendingNotificationRequests()
+        
+        let content = UNMutableNotificationContent()
+        
+        content.title = title
+        content.body = body
+        content.sound = .default
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: seconds, repeats: false)
+        
+        let request = UNNotificationRequest(identifier: "shuffle-notification", content: content, trigger: trigger)
+        notificationCenter.add(request)
     }
 }
