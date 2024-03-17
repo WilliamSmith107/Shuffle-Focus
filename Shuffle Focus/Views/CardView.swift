@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 enum CardType {
     case timer
@@ -18,7 +19,11 @@ enum CardType {
 
 
 struct CardView: View {
+
     
+    
+    
+    // Environment object.
     @EnvironmentObject var eventManager: EventManager
     
     var type: CardType
@@ -26,12 +31,17 @@ struct CardView: View {
     var id: UUID
     
     private var header: String = ""
+
+    private var randomInt: Int = 0
     
     var shuffleTimer: ShuffleTimer?
     init(type: CardType, colour: Color, id: UUID) {
         self.type = type
         self.colour = colour
         self.id = id
+        
+        
+        randomInt = Int.random(in: 0..<2)
         
         switch type {
         case .timer:
@@ -68,11 +78,13 @@ struct CardView: View {
             
             VStack {
                 HStack {
-                    Text(header)
-                        .font(.largeTitle)
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.leading)
-                    
+                    if type != .blank {
+                        Text(header)
+                            .font(.largeTitle)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.leading)
+                    }
+
                     Spacer()
                 }
                 
@@ -93,13 +105,16 @@ struct CardView: View {
                         .environmentObject(eventManager)
                     
                 case .absurdity:
-                    Text("Absurdity")
+                    AbsurdityView(name: eventManager.shuffleAbsurdities.absurdities[randomInt].name, image: eventManager.shuffleAbsurdities.absurdities[randomInt].image, detail: eventManager.shuffleAbsurdities.absurdities[randomInt].detail)
                         .onAppear(perform: {
                             eventManager.frontComplete = true
                         })
                     
                 case .blank:
-                    Text("Blank")
+                    Image(systemName: "square.stack")
+                        .resizable()
+                        .foregroundColor(.white)
+                        .frame(width: 100, height: 120)
                 }
                 
                 Spacer()

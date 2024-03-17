@@ -16,6 +16,12 @@ class EventManager: ObservableObject {
     
     @Published var timerStarted: Bool = false
     @Published var pauseFinished: Bool = true
+    
+    @Published var shuffleAbsurdities: ShuffleAbsurdities = ShuffleAbsurdities()
+    
+    init() {
+        shuffleAbsurdities.onAppStart()
+    }
 }
 
 

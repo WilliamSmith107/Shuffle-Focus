@@ -11,6 +11,9 @@
 		3D2CCAB52BA2247300DAFDB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCAB42BA2247300DAFDB0 /* ContentView.swift */; };
 		3D2CCAB72BA2247400DAFDB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2CCAB62BA2247400DAFDB0 /* Assets.xcassets */; };
 		3D2CCABA2BA2247400DAFDB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2CCAB92BA2247400DAFDB0 /* Preview Assets.xcassets */; };
+		3D6C774B2BA7681C00213737 /* ShuffleAbsurdities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C774A2BA7681C00213737 /* ShuffleAbsurdities.swift */; };
+		3D6C774E2BA7813C00213737 /* Absurdities.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D6C774D2BA7813C00213737 /* Absurdities.json */; };
+		3D6C77522BA7884400213737 /* AbsurdityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C77512BA7884400213737 /* AbsurdityView.swift */; };
 		3D8252012BA3B39C0045CD8D /* ShuffleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8252002BA3B39C0045CD8D /* ShuffleTimer.swift */; };
 		3D95D5CC2BA683710075063E /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95D5CB2BA683710075063E /* TimerView.swift */; };
 		3D95D5CE2BA6837A0075063E /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95D5CD2BA6837A0075063E /* SwipeView.swift */; };
@@ -24,6 +27,9 @@
 		3D2CCAB42BA2247300DAFDB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3D2CCAB62BA2247400DAFDB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D2CCAB92BA2247400DAFDB0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3D6C774A2BA7681C00213737 /* ShuffleAbsurdities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleAbsurdities.swift; sourceTree = "<group>"; };
+		3D6C774D2BA7813C00213737 /* Absurdities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Absurdities.json; sourceTree = "<group>"; };
+		3D6C77512BA7884400213737 /* AbsurdityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsurdityView.swift; sourceTree = "<group>"; };
 		3D8252002BA3B39C0045CD8D /* ShuffleTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleTimer.swift; sourceTree = "<group>"; };
 		3D95D5CB2BA683710075063E /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		3D95D5CD2BA6837A0075063E /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
@@ -62,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				3D2CCAB42BA2247300DAFDB0 /* ContentView.swift */,
+				3D6C774C2BA7795A00213737 /* Data */,
 				3D95D5CA2BA683650075063E /* Views */,
 				3D8251FF2BA3B38E0045CD8D /* Logic */,
 				3D2CCAB62BA2247400DAFDB0 /* Assets.xcassets */,
@@ -79,10 +86,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3D6C774C2BA7795A00213737 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3D6C77532BA78D1100213737 /* Images */,
+				3D6C774D2BA7813C00213737 /* Absurdities.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3D6C77532BA78D1100213737 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		3D8251FF2BA3B38E0045CD8D /* Logic */ = {
 			isa = PBXGroup;
 			children = (
 				3D8252002BA3B39C0045CD8D /* ShuffleTimer.swift */,
+				3D6C774A2BA7681C00213737 /* ShuffleAbsurdities.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -94,6 +118,7 @@
 				3D95D5CF2BA6839E0075063E /* CardView.swift */,
 				3D95D5CB2BA683710075063E /* TimerView.swift */,
 				3D95D5D12BA746BA0075063E /* ProgressView.swift */,
+				3D6C77512BA7884400213737 /* AbsurdityView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,6 +183,7 @@
 			files = (
 				3D2CCABA2BA2247400DAFDB0 /* Preview Assets.xcassets in Resources */,
 				3D2CCAB72BA2247400DAFDB0 /* Assets.xcassets in Resources */,
+				3D6C774E2BA7813C00213737 /* Absurdities.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,8 +199,10 @@
 				3D95D5CC2BA683710075063E /* TimerView.swift in Sources */,
 				3D95D5CE2BA6837A0075063E /* SwipeView.swift in Sources */,
 				3D95D5D22BA746BA0075063E /* ProgressView.swift in Sources */,
+				3D6C77522BA7884400213737 /* AbsurdityView.swift in Sources */,
 				3D95D5D02BA6839E0075063E /* CardView.swift in Sources */,
 				3D2CCAB32BA2247300DAFDB0 /* Shuffle_FocusApp.swift in Sources */,
+				3D6C774B2BA7681C00213737 /* ShuffleAbsurdities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

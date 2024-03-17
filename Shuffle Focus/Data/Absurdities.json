@@ -1,0 +1,19 @@
+{
+    "results": [
+      {
+        "name": "Ostrich",
+        "image": "Absurdity_Ostrich",
+        "detail": "Go and pet your ostrich."
+      },
+      {
+        "name": "Kangaroo",
+        "image": "Absurdity_Kangaroo",
+        "detail": "Fight that kangaroo!"
+      },
+      {
+        "name": "Worm",
+        "image": "Absurdity_Worm",
+        "detail": "Make some worm soup..."
+      }
+    ]
+  }
