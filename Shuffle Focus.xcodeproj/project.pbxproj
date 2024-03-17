@@ -11,7 +11,10 @@
 		3D2CCAB52BA2247300DAFDB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCAB42BA2247300DAFDB0 /* ContentView.swift */; };
 		3D2CCAB72BA2247400DAFDB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2CCAB62BA2247400DAFDB0 /* Assets.xcassets */; };
 		3D2CCABA2BA2247400DAFDB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2CCAB92BA2247400DAFDB0 /* Preview Assets.xcassets */; };
-		3D2CCAC22BA2266F00DAFDB0 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCAC12BA2266F00DAFDB0 /* TimerView.swift */; };
+		3D8252012BA3B39C0045CD8D /* ShuffleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8252002BA3B39C0045CD8D /* ShuffleTimer.swift */; };
+		3D95D5CC2BA683710075063E /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95D5CB2BA683710075063E /* TimerView.swift */; };
+		3D95D5CE2BA6837A0075063E /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95D5CD2BA6837A0075063E /* SwipeView.swift */; };
+		3D95D5D02BA6839E0075063E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95D5CF2BA6839E0075063E /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +23,10 @@
 		3D2CCAB42BA2247300DAFDB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3D2CCAB62BA2247400DAFDB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D2CCAB92BA2247400DAFDB0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3D2CCAC12BA2266F00DAFDB0 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		3D8252002BA3B39C0045CD8D /* ShuffleTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleTimer.swift; sourceTree = "<group>"; };
+		3D95D5CB2BA683710075063E /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		3D95D5CD2BA6837A0075063E /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		3D95D5CF2BA6839E0075063E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +59,11 @@
 		3D2CCAB12BA2247300DAFDB0 /* Shuffle Focus */ = {
 			isa = PBXGroup;
 			children = (
-				3D2CCAC02BA2265A00DAFDB0 /* Views */,
-				3D2CCAB22BA2247300DAFDB0 /* Shuffle_FocusApp.swift */,
 				3D2CCAB42BA2247300DAFDB0 /* ContentView.swift */,
+				3D95D5CA2BA683650075063E /* Views */,
+				3D8251FF2BA3B38E0045CD8D /* Logic */,
 				3D2CCAB62BA2247400DAFDB0 /* Assets.xcassets */,
+				3D2CCAB22BA2247300DAFDB0 /* Shuffle_FocusApp.swift */,
 				3D2CCAB82BA2247400DAFDB0 /* Preview Content */,
 			);
 			path = "Shuffle Focus";
@@ -70,10 +77,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		3D2CCAC02BA2265A00DAFDB0 /* Views */ = {
+		3D8251FF2BA3B38E0045CD8D /* Logic */ = {
 			isa = PBXGroup;
 			children = (
-				3D2CCAC12BA2266F00DAFDB0 /* TimerView.swift */,
+				3D8252002BA3B39C0045CD8D /* ShuffleTimer.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		3D95D5CA2BA683650075063E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D95D5CD2BA6837A0075063E /* SwipeView.swift */,
+				3D95D5CF2BA6839E0075063E /* CardView.swift */,
+				3D95D5CB2BA683710075063E /* TimerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,8 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D2CCAC22BA2266F00DAFDB0 /* TimerView.swift in Sources */,
 				3D2CCAB52BA2247300DAFDB0 /* ContentView.swift in Sources */,
+				3D8252012BA3B39C0045CD8D /* ShuffleTimer.swift in Sources */,
+				3D95D5CC2BA683710075063E /* TimerView.swift in Sources */,
+				3D95D5CE2BA6837A0075063E /* SwipeView.swift in Sources */,
+				3D95D5D02BA6839E0075063E /* CardView.swift in Sources */,
 				3D2CCAB32BA2247300DAFDB0 /* Shuffle_FocusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Shuffle Focus/Preview Content\"";
@@ -310,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Shuffle Focus/Preview Content\"";
