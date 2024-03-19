@@ -65,11 +65,13 @@ struct TimerView: View {
                             }
                         })
                 } else {
-                    Text("\(String(format: "%02d", shuffleTimer.secondsMinutes.m)):\(String(format: "%02d", shuffleTimer.secondsMinutes.s))")
-                        .font(.system(size: 50))
-                        .foregroundStyle(.white)
-                        .tracking(6)
-                        .fontWeight(.semibold)
+                    if shuffleTimer.secondsLeft >= 0 {
+                        Text("\(String(format: "%02d", shuffleTimer.secondsMinutes.m)):\(String(format: "%02d", shuffleTimer.secondsMinutes.s))")
+                            .font(.system(size: 50))
+                            .foregroundStyle(.white)
+                            .tracking(6)
+                            .fontWeight(.semibold)
+                    }
                 }
                 
             }
