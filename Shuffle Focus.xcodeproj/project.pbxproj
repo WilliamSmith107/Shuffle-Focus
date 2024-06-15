@@ -11,14 +11,20 @@
 		3D2CCAB52BA2247300DAFDB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CCAB42BA2247300DAFDB0 /* ContentView.swift */; };
 		3D2CCAB72BA2247400DAFDB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2CCAB62BA2247400DAFDB0 /* Assets.xcassets */; };
 		3D2CCABA2BA2247400DAFDB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2CCAB92BA2247400DAFDB0 /* Preview Assets.xcassets */; };
-		3D6C774B2BA7681C00213737 /* ShuffleAbsurdities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C774A2BA7681C00213737 /* ShuffleAbsurdities.swift */; };
 		3D6C774E2BA7813C00213737 /* Absurdities.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D6C774D2BA7813C00213737 /* Absurdities.json */; };
 		3D6C77522BA7884400213737 /* AbsurdityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6C77512BA7884400213737 /* AbsurdityView.swift */; };
-		3D8252012BA3B39C0045CD8D /* ShuffleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8252002BA3B39C0045CD8D /* ShuffleTimer.swift */; };
 		3D95D5CC2BA683710075063E /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95D5CB2BA683710075063E /* TimerView.swift */; };
 		3D95D5CE2BA6837A0075063E /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95D5CD2BA6837A0075063E /* SwipeView.swift */; };
 		3D95D5D02BA6839E0075063E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95D5CF2BA6839E0075063E /* CardView.swift */; };
-		3D95D5D22BA746BA0075063E /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D95D5D12BA746BA0075063E /* ProgressView.swift */; };
+		3DD90B532C1DCBC100A9AD8A /* SwipeView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD90B522C1DCBC100A9AD8A /* SwipeView-ViewModel.swift */; };
+		3DD90B552C1DCBF800A9AD8A /* TimerView-ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD90B542C1DCBF800A9AD8A /* TimerView-ViewModel.swift */; };
+		3DD90B592C1DCC9400A9AD8A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD90B582C1DCC9400A9AD8A /* Card.swift */; };
+		3DD90B5B2C1DCC9C00A9AD8A /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD90B5A2C1DCC9C00A9AD8A /* CardType.swift */; };
+		3DD90B5D2C1DCCE400A9AD8A /* Absurdity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD90B5C2C1DCCE400A9AD8A /* Absurdity.swift */; };
+		3DD90B5F2C1DCCFC00A9AD8A /* ParseAbsurdities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD90B5E2C1DCCFC00A9AD8A /* ParseAbsurdities.swift */; };
+		3DD90B612C1DCD1700A9AD8A /* FocusCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD90B602C1DCD1700A9AD8A /* FocusCircle.swift */; };
+		3DD90B632C1DCD2F00A9AD8A /* ProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD90B622C1DCD2F00A9AD8A /* ProgressRing.swift */; };
+		3DD90B652C1DCD4300A9AD8A /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD90B642C1DCD4300A9AD8A /* Notification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,14 +33,20 @@
 		3D2CCAB42BA2247300DAFDB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3D2CCAB62BA2247400DAFDB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D2CCAB92BA2247400DAFDB0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3D6C774A2BA7681C00213737 /* ShuffleAbsurdities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleAbsurdities.swift; sourceTree = "<group>"; };
 		3D6C774D2BA7813C00213737 /* Absurdities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Absurdities.json; sourceTree = "<group>"; };
 		3D6C77512BA7884400213737 /* AbsurdityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsurdityView.swift; sourceTree = "<group>"; };
-		3D8252002BA3B39C0045CD8D /* ShuffleTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleTimer.swift; sourceTree = "<group>"; };
 		3D95D5CB2BA683710075063E /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		3D95D5CD2BA6837A0075063E /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 		3D95D5CF2BA6839E0075063E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		3D95D5D12BA746BA0075063E /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		3DD90B522C1DCBC100A9AD8A /* SwipeView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwipeView-ViewModel.swift"; sourceTree = "<group>"; };
+		3DD90B542C1DCBF800A9AD8A /* TimerView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimerView-ViewModel.swift"; sourceTree = "<group>"; };
+		3DD90B582C1DCC9400A9AD8A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		3DD90B5A2C1DCC9C00A9AD8A /* CardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
+		3DD90B5C2C1DCCE400A9AD8A /* Absurdity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Absurdity.swift; sourceTree = "<group>"; };
+		3DD90B5E2C1DCCFC00A9AD8A /* ParseAbsurdities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseAbsurdities.swift; sourceTree = "<group>"; };
+		3DD90B602C1DCD1700A9AD8A /* FocusCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusCircle.swift; sourceTree = "<group>"; };
+		3DD90B622C1DCD2F00A9AD8A /* ProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRing.swift; sourceTree = "<group>"; };
+		3DD90B642C1DCD4300A9AD8A /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				3D2CCAB42BA2247300DAFDB0 /* ContentView.swift */,
-				3D6C774C2BA7795A00213737 /* Data */,
 				3D95D5CA2BA683650075063E /* Views */,
-				3D8251FF2BA3B38E0045CD8D /* Logic */,
+				3DD90B512C1DCB6D00A9AD8A /* ViewModels */,
+				3DD90B502C1DCB5400A9AD8A /* Helpers */,
+				3D6C774C2BA7795A00213737 /* Data */,
 				3D2CCAB62BA2247400DAFDB0 /* Assets.xcassets */,
 				3D2CCAB22BA2247300DAFDB0 /* Shuffle_FocusApp.swift */,
 				3D2CCAB82BA2247400DAFDB0 /* Preview Content */,
@@ -94,25 +107,54 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		3D8251FF2BA3B38E0045CD8D /* Logic */ = {
-			isa = PBXGroup;
-			children = (
-				3D8252002BA3B39C0045CD8D /* ShuffleTimer.swift */,
-				3D6C774A2BA7681C00213737 /* ShuffleAbsurdities.swift */,
-			);
-			path = Logic;
-			sourceTree = "<group>";
-		};
 		3D95D5CA2BA683650075063E /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				3D95D5CD2BA6837A0075063E /* SwipeView.swift */,
 				3D95D5CF2BA6839E0075063E /* CardView.swift */,
 				3D95D5CB2BA683710075063E /* TimerView.swift */,
-				3D95D5D12BA746BA0075063E /* ProgressView.swift */,
 				3D6C77512BA7884400213737 /* AbsurdityView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		3DD90B502C1DCB5400A9AD8A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3DD90B562C1DCC7B00A9AD8A /* Absurdities */,
+				3DD90B572C1DCC8100A9AD8A /* Cards */,
+				3DD90B602C1DCD1700A9AD8A /* FocusCircle.swift */,
+				3DD90B622C1DCD2F00A9AD8A /* ProgressRing.swift */,
+				3DD90B642C1DCD4300A9AD8A /* Notification.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3DD90B512C1DCB6D00A9AD8A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3DD90B522C1DCBC100A9AD8A /* SwipeView-ViewModel.swift */,
+				3DD90B542C1DCBF800A9AD8A /* TimerView-ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3DD90B562C1DCC7B00A9AD8A /* Absurdities */ = {
+			isa = PBXGroup;
+			children = (
+				3DD90B5C2C1DCCE400A9AD8A /* Absurdity.swift */,
+				3DD90B5E2C1DCCFC00A9AD8A /* ParseAbsurdities.swift */,
+			);
+			path = Absurdities;
+			sourceTree = "<group>";
+		};
+		3DD90B572C1DCC8100A9AD8A /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				3DD90B582C1DCC9400A9AD8A /* Card.swift */,
+				3DD90B5A2C1DCC9C00A9AD8A /* CardType.swift */,
+			);
+			path = Cards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,14 +229,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D2CCAB52BA2247300DAFDB0 /* ContentView.swift in Sources */,
-				3D8252012BA3B39C0045CD8D /* ShuffleTimer.swift in Sources */,
+				3DD90B5D2C1DCCE400A9AD8A /* Absurdity.swift in Sources */,
+				3DD90B632C1DCD2F00A9AD8A /* ProgressRing.swift in Sources */,
+				3DD90B5F2C1DCCFC00A9AD8A /* ParseAbsurdities.swift in Sources */,
+				3DD90B532C1DCBC100A9AD8A /* SwipeView-ViewModel.swift in Sources */,
 				3D95D5CC2BA683710075063E /* TimerView.swift in Sources */,
 				3D95D5CE2BA6837A0075063E /* SwipeView.swift in Sources */,
-				3D95D5D22BA746BA0075063E /* ProgressView.swift in Sources */,
+				3DD90B5B2C1DCC9C00A9AD8A /* CardType.swift in Sources */,
+				3DD90B552C1DCBF800A9AD8A /* TimerView-ViewModel.swift in Sources */,
 				3D6C77522BA7884400213737 /* AbsurdityView.swift in Sources */,
 				3D95D5D02BA6839E0075063E /* CardView.swift in Sources */,
+				3DD90B612C1DCD1700A9AD8A /* FocusCircle.swift in Sources */,
 				3D2CCAB32BA2247300DAFDB0 /* Shuffle_FocusApp.swift in Sources */,
-				3D6C774B2BA7681C00213737 /* ShuffleAbsurdities.swift in Sources */,
+				3DD90B592C1DCC9400A9AD8A /* Card.swift in Sources */,
+				3DD90B652C1DCD4300A9AD8A /* Notification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

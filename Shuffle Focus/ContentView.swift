@@ -9,13 +9,16 @@ import SwiftUI
 import UserNotifications
 
 struct ContentView: View {
+    
     var body: some View {
         VStack {
             
             // Display SwipeView for app logic.
             SwipeView()
+            Spacer()
 
         }
+        .padding()
         .onAppear(perform: {
             UIApplication.shared.isIdleTimerDisabled = true
             

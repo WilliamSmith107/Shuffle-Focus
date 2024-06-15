@@ -9,19 +9,16 @@ import SwiftUI
 
 struct AbsurdityView: View {
     
-    var name: String
-    var image: String
-    var detail: String
+    var absurdity: Absurdity
     
     var body: some View {
-        Image(image)
+        Image(absurdity.image)
             .resizable()
             .scaledToFit()
             .frame(width: 200, height: 200)
             
-        Spacer()
-        
-        Text("\(detail)")
+       
+        Text("\(absurdity.detail)")
             .multilineTextAlignment(.center)
             .font(.system(size: 32))
             .foregroundStyle(.white)
@@ -30,5 +27,5 @@ struct AbsurdityView: View {
 }
 
 #Preview {
-    AbsurdityView(name: "Test", image: "TestImage", detail: "TestDetail")
+    AbsurdityView(absurdity: Absurdity(name: "Onion", image: "Absurdity_Onion", detail: "Pickle an onion!"))
 }
