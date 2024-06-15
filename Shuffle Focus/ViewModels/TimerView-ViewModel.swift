@@ -82,8 +82,7 @@ extension TimerView {
         func updateTimer() {
             // Check that time remains.
             if (secondsRemaining <= 0) {
-                print("Timer complete.")
-                print(card.type.wrappedValue )
+
                 complete = true
                 
                 // Update the total number of breaks.
@@ -135,6 +134,8 @@ extension TimerView {
             secondsPassedBeforePause = timePassed
             timerState = .Paused
             
+            cancelNotification()
+            
             endTimer()
         }
         
@@ -157,7 +158,12 @@ extension TimerView {
             case Paused
         }
         
-        
+        func cancelNotification() {
+            let notificationCenter = UNUserNotificationCenter.current()
+            
+            notificationCenter.removeAllDeliveredNotifications()
+            notificationCenter.removeAllPendingNotificationRequests()
+        }
         
         
         func scheduleNotification(seconds: TimeInterval, title: String, body: String) {
